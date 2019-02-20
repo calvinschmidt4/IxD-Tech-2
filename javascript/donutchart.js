@@ -5,7 +5,7 @@ google.charts.setOnLoadCallback(drawChartDonut);
 function drawChartDonut() {
 
   var data = google.visualization.arrayToDataTable([
-    ['Zuurstof ', 'verbruik'],
+    ['Zuurstof', 'verbruik'],
     ['Over', 20000],
     ['Verbruikt', 25000]  
   ]);
