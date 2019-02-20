@@ -1,0 +1,208 @@
+body, html {
+    margin: 0px;
+    margin: auto;
+    font-family: 'sarpanch';    
+}
+
+body {
+    background-color: #A7A9AC;    
+}
+
+/*
+GRID
+*/
+.grid-container {
+    width: 95%;
+    margin: 16px auto;
+    display: grid;
+    grid-template-columns: 64% 32%;
+    grid-row-gap: 16px;
+    grid-column-gap: 4%;
+    grid-template-areas: 'voorraad voorraad' 'zuurstof gkracht';    
+}
+
+/*
+TITLES
+*/
+.section-title {
+    height: 32px;
+    background-color: #005288;
+    border-top-right-radius: 12px;
+    display: flex;
+}
+
+.section-title h1 {    
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+    color: #fff;  
+    font-weight: normal;  
+}
+
+.sub-title {
+    height: 24px;
+    background-color: #005288;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sub-title h1 {    
+    font-size: 14px;
+    padding: 0;
+    margin: auto; 
+    font-weight: normal;  
+}
+
+/*
+VOORRADENSTYLE
+*/
+#chart_div_one, #chart_div_two, #chart_div_three {
+    width: 90%;
+    min-height: 24px;
+    margin: 16px auto 0 auto;
+}
+
+/*
+HEADER
+*/
+.header {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    height: 32px;    
+}
+
+.spacexlogo {
+    max-height: 16px;  
+    padding: 0px;
+    margin: auto;         
+}
+
+.title h4 {
+    padding: 0px;
+    margin: auto;
+    font-size: 12px;
+    color: #005288;   
+    font-weight: bold; 
+}
+
+.logo, .title, .empty {
+    display: flex;
+    flex: 1;
+}
+
+/*
+VOORRAAD
+*/
+.voorraad {
+    grid-area: voorraad;    
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 12px;
+    min-height: 240px;
+    background-color: #fff;
+}
+
+.one > h1{
+    color:#0FEEEE;
+}
+
+
+/*
+ZUURSTOF
+*/
+.zuurstof {
+    grid-area: zuurstof; 
+    width: 100%;       
+    margin: auto 0px auto auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 12px;
+    min-height: 240px;     
+}
+
+.two > h1{
+    color:#0FEE61;
+}
+
+#donutchart {
+    min-height: 208px;
+}
+
+/*
+GKRACHT
+*/
+.gkracht {
+    grid-area: gkracht;    
+    width: 100%;   
+    margin: auto auto auto 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-top-right-radius: 12px;
+    min-height: 240px;
+    background-color: #fff;
+}
+
+.three > h1{
+    color:#FFE854;
+}
+
+#columnchart {
+    max-width: 30%;
+    min-height: 176px;
+    margin: 16px auto auto auto;
+}
+
+@media only screen and (min-width: 599px){
+
+    /*
+    GRID
+    */
+    .grid-container {    
+        grid-template-columns: 50% 27% 18% ;
+        grid-column-gap: 3%;
+        grid-template-areas: 'voorraad zuurstof gkracht';    
+    }
+
+    /*
+    VOORRAAD
+    */
+    .voorraad {        
+        margin: 0;  
+    }
+  
+    /*
+    ZUURSTOF
+    */
+    .zuurstof {              
+        margin: 0;        
+    }
+
+    /*
+    GKRACHT
+    */
+    .gkracht {             
+        margin: 0;        
+    }
+}
+
+@media only screen and (min-width: 899px){
+    .grid-container {    
+        width: 80%;
+        grid-template-columns: 64% 32%;
+        grid-column-gap: 4%;
+        grid-template-areas: 'voorraad voorraad' 'zuurstof gkracht';    
+    }
+}
+
+@media only screen and (min-width: 1199px){
+    .grid-container {   
+        width: 70%; 
+        grid-template-columns: 50% 27% 18% ;
+        grid-column-gap: 3%;
+        grid-template-areas: 'voorraad zuurstof gkracht';    
+    }
+}
+
+
