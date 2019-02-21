@@ -87,9 +87,9 @@ HEADER
 .title h4 {
     padding: 0px;
     margin: auto;
-    font-size: 12px;
+    font-size: 16px;
     color: #005288;   
-    font-weight: bold; 
+    font-weight: normal; 
 }
 
 .logo, .title, .empty {
