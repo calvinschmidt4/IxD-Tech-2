@@ -13,12 +13,12 @@ GRID
 */
 .grid-container {
     width: 95%;
-    margin: 16px auto;
+    margin: 48px auto;
     display: grid;
     grid-template-columns: 64% 32%;
     grid-row-gap: 16px;
     grid-column-gap: 4%;
-    grid-template-areas: 'voorraad voorraad' 'zuurstof gkracht';    
+    grid-template-areas: 'voorraad voorraad' 'zuurstof gkracht';
 }
 
 /*
@@ -72,6 +72,10 @@ HEADER
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     height: 32px;
+    position: fixed;
+    top: 0;
+    margin: 0 auto 0 auto;
+    z-index: 1;
 }
 
 .spacexlogo {
@@ -109,7 +113,6 @@ VOORRAAD
 .one > h1{
     color:#0FEEEE;
 }
-
 
 /*
 ZUURSTOF
@@ -188,6 +191,9 @@ GKRACHT
 }
 
 @media only screen and (min-width: 899px){
+    /*
+    GRID
+    */
     .grid-container {    
         width: 80%;
         grid-template-columns: 64% 32%;
@@ -197,6 +203,9 @@ GKRACHT
 }
 
 @media only screen and (min-width: 1199px){
+    /*
+    GRID
+    */
     .grid-container {   
         width: 70%; 
         grid-template-columns: 50% 27% 18%;
